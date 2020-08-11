@@ -3,8 +3,6 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block content %}
-
-<div class="example-wrapper">
-    <h1>This is test</h1>
-</div>
+    {% include 'default/sections/hero.html.twig' %}
+    {% include'default/sections/main.html.twig' %}
 {% endblock %}

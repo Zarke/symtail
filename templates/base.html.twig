@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
-<html>
+<html class="text-gray-900 antialiased leading-tight">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}
-        {{ encore_entry_link_tags('app') }}
-    {% endblock %}
+    {%- block stylesheets -%}
+        {# could contain other stylesheet link tags relevant to your project #}
+        {{ encore_entry_link_tags('tailwind') }}
+    {%- endblock -%}
 </head>
-<body>
+<body class="min-h-screen antialiased relative">
 {% block body %}
-    <nav>
-        <a>Vucicu pederu</a>
-    </nav>
+    {% block header %}
+
+    {% endblock header %}
 
     {% block content %}
 

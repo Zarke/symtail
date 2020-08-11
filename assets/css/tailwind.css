@@ -1,0 +1,35 @@
+@tailwind base;
+h1 {
+    @apply text-2xl;
+}
+
+h2 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+h4 {
+    @apply text-sm;
+}
+
+@tailwind components;
+.hover-container .hover-overlay {
+    @apply transition duration-150 ease-in-out h-0 invisible;
+}
+.hover-container .hover-content {
+    @apply transition duration-150 ease-in-out h-full visible;
+}
+
+
+.hover-container:hover .hover-overlay {
+    @apply transition duration-150 ease-in-out h-full visible;
+}
+
+.hover-container:hover .hover-content {
+    @apply transition duration-150 ease-in-out h-0 invisible;
+}
+
+@tailwind utilities;
